@@ -1,0 +1,451 @@
+@charset "utf-8";
+body {
+	margin: 0;
+	font-family: graphik-lt, PingFangTC-Light, "Noto Sans Light";;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+img {
+	vertical-align: top;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+input {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-appearance: none;
+}
+.clearFix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.banner {
+	padding: 187px 0 69px;
+	width: 100%;
+	height: auto;
+	background: url(../img/banner.jpg) no-repeat center 0;
+	background-size: 100% auto;
+}
+.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	padding: 22px 11.033%;
+	width: 100%;
+	box-sizing: border-box;
+	background: #000;
+}
+.menu {
+	display: none;
+	float: left;
+	margin: 19px 0 0 15px;
+	width: 20px;
+	height: 13px;
+	background: url(../img/menu.png) no-repeat;
+}
+.logo {
+	float: left;
+	padding-top: 28px;
+	width: 9.0171%;
+	height: 0;
+	overflow: hidden;
+	background: url(../img/logo.png) no-repeat;
+	background-size: contain;
+}
+.topNav {
+	float: left;
+	/*width: 675px;*/
+	width: 80.87%;
+}
+.topNav a {
+	float: left;
+	font-size: 16px;
+	line-height: 28px;
+	color: #fff;
+	margin-left: 5.8888%;
+	transition: .8s transfrom;
+}
+.topNav a:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	transform: scale(0);
+	transition: .8s;
+	background: #03a8c7;
+}
+.topNav a:hover {
+	color: #03a8c7;
+}
+.topNav a:hover:after {
+	transform: scale(1);
+}
+.YOU {
+	margin: 0 auto;
+	width: 17.71%;
+	height: auto;
+}
+.YOU img {
+	width: 100%;
+	height: auto;
+}
+.btn {
+	width: 100%;
+	text-align: center;
+}
+.btn a {
+	position: relative;
+	z-index: 5;
+	display: inline-block;
+	margin-top: 39px;
+	box-sizing: border-box;
+	width: 214px; 
+	font: bolder italic 18px/3  "Noto Sans Bold";
+	color: #fff;
+	letter-spacing: .15em;
+	border: 2px solid #fff;
+	border-radius: 29px;
+	transition: .5s;
+	overflow: hidden;
+}
+.btn a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -58px;
+	z-index: -2;
+	width: 120%;
+	height: 58px;
+	background: #fff;
+	transition: .5s;
+}
+.btn a:hover {
+	color: #000;
+}
+.btn a:hover::after {
+	bottom: 0;
+}
+.picList {
+	background: #f3f4f5;
+}
+.picList li {
+	position: relative;
+	float: left;
+	width: 33.3333%;
+	box-sizing: border-box;
+	border: 5px solid #f3f4f5;
+	border-left: none;
+	/*padding-bottom: 16.6%;*/
+	height: 240px;
+}
+.picList li:nth-of-type(3) {
+	border-right: none;
+}
+.picList a {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-size: cover;
+}
+.picList li:nth-of-type(1) a {
+	background: url(../img/img1.jpg) no-repeat center;
+	background-size: cover;
+}
+.picList li:nth-of-type(2) a {
+	background: url(../img/img2.jpg) no-repeat center;
+	background-size: cover;
+}
+.picList li:nth-of-type(3) a {
+	background: url(../img/img3.jpg) no-repeat center;
+	background-size: cover;
+}
+.picList strong {
+	position: absolute;
+	left: 0;
+	top: 22px;
+	width: 100%;
+	font-size: 18px;
+	line-height: 1;
+	color: #000;
+	text-align: center;
+}
+.picList span {
+	position: absolute;
+	left: 0;
+	top: 54px;
+	width: 100%;
+	font-size: 16px;
+	line-height: 1;
+	color: #7f8885;
+	text-align: center;
+}
+.animation {
+	width: 100%;
+	margin: 85px 0 68px;
+	height: 87px;
+	overflow: hidden;
+	background: #fff;
+}
+@keyframes move {
+	0% {
+		transform: translateY(0);
+	}
+	15% {
+		transform: translateY(0);
+	}
+	17% {
+		transform: translateY(-87px);
+	}
+	32% {
+		transform: translateY(-87px);
+	}
+	34% {
+		transform: translateY(-174px);
+	}
+	49% {
+		transform: translateY(-174px);
+	}
+	51% {
+		transform: translateY(-261px);
+	}
+	66% {
+		transform: translateY(-261px);
+	}
+	68% {
+		transform: translateY(-348px);
+	}
+	83% {
+		transform: translateY(-348px);
+	}
+	85% {
+		transform: translateY(-435px);
+	}
+	98% {
+		transform: translateY(-435px);
+	}
+	100% {
+		transform: translateY(-522px);
+	}
+}
+.textList {
+	height: 1200%;
+	animation: 30s move linear infinite;
+}
+.textList li {
+	padding:0 0 3px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.textList strong {
+	display: block;
+	font-size: 43px;
+	font-weight: lighter;
+	line-height: 1;
+	color: #737d82;
+	text-align: center;
+}
+.textList span {
+	display: block;
+	margin-top: 17px;
+	font-size: 24px;
+	line-height: 1;
+	color: #737d82;
+	font-weight: lighter;
+	text-align: center;
+}
+.News {
+	height: 81px;
+	width: 100%;
+	text-align: center;
+	background: rgba(241,243,243,1);
+}
+.News a {
+	display: inline-block;
+	width: 140px;
+	text-align: center;
+	vertical-align: middle;
+}
+.null {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.community { 
+	padding: 0 10.97046%;
+	height: 65px;
+	text-align: center;
+	color: #ebffeb;
+	background: #323237;
+	line-height: 1;
+}
+.community .Our {
+	float: left;
+	width: 25.6657%; 
+	font-size: 16px;
+	line-height: 65px;
+}
+.community .number {
+	float: left;
+	width: 74.32432%;
+}
+.number li {
+	float: left;
+	width: 33.3333%;
+}
+.number li h4 {
+	font-size: 12px;
+	line-height: 30px;
+}
+.number li p {
+	font-size: 24px;
+	line-height: 30px;
+	color: #1dc9e8;
+}
+.number p span {
+	padding-left: 5px;
+	font-size: 12px;
+	color: #ebffeb;
+}
+.Sign {
+	padding: 30px 0 0;
+	background: #3d3c42;
+}
+.form {
+	position: relative;
+	margin: 0 auto;
+	width: 350px;
+	height: 37px;
+	border-radius: 18px;
+	background: #fff;
+}
+.write {
+	box-sizing: border-box;
+	padding: 3px 35px;
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	line-height: 30px;
+	border-radius: 18px;
+}
+.signBtn {
+	position: absolute;
+	right: 3px;
+	top: 3px;
+	width: 104px;
+	height: 31px;
+	border-radius: 15px;
+	font-size: 12px;
+	font-weight: bolder;
+	color: #fff;
+	font-style: italic;
+	background: #737d82;
+	transition: 1s;
+}
+.signBtn:hover {
+	background: #ff1923;
+}
+.List {
+	padding: 41px 12.0871% 24px 12.0871%;
+	box-sizing: border-box;
+	width: 100%;
+}
+.SignList {
+	float: left;
+	width: 84.39%;
+}
+.SignList li {
+	float: left;
+	width: 20%;
+}
+.SignList a {
+	display: block;
+	font-size: 16px;
+	line-height: 24px;
+	color: #646c77;
+}
+.SignList .SignTitle {
+	line-height: 36px;
+	color: #ecf8d3;
+}
+.iconsNav {
+	float: left;
+	width: 15.525%;
+}
+.iconsNav a {
+	float: left;
+	margin: 10px 10px 0 0;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background: #b8bbc0;
+}
+.iconsNav img {
+	display: block;
+	margin: 6px auto;
+	width: 50%;
+	height: 50%;
+}
+.footer {
+	box-sizing: border-box;
+	padding: 15px 11.033% 0;
+	width: 100%;
+	height: 47px;
+	font-size: 12px;
+	line-height: 32px;
+	color: #7e8673;
+	background: #323237;
+}
+.Copy {
+	float: left;
+	margin-right: 25px;
+}
+.Privacy {
+	float: left;
+	margin-right: 20px;
+	color: #6a7876;
+}
+.Terms {
+	float: left;
+	color: #6a7876;
+}
+.dropmenu {
+	float: right;
+	padding: 0;
+	color: #e1eade;
+	background: none;
+	border: none;
+	outline: none;
+}
+.dropmenu option {
+	color: #e1eade;
+	background: #323237;
+	border: none;
+	outline: none;	
+}
+.caret {
+	float: right;
+	position: relative;
+	left: -12px;
+	top: 4px;
+	width: 10px;
+	height: 9px;
+	background: url(../img/arrow.png) no-repeat;
+}

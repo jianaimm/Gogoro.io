@@ -1,0 +1,35 @@
+
+.header {
+	padding: 0 11.033% 0 0;
+	height: 50px;
+}
+.menu {
+	display: block;
+}
+.logo {
+	float: none;
+	margin: 22px auto 0;
+	width: 7.819%;
+}
+.topNav {
+	display: none;
+}
+.community {
+	padding: 0 3.97046%;
+}
+
+/*Sign.css*/
+.SignList {
+	float: none;
+	width: 100%;
+}
+.SignList li {
+	float: none;
+	padding: 10px 0;
+}
+.hiddenMd {
+	display: none;
+}
+.iconsNav {
+	float: none;
+}

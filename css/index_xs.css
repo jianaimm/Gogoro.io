@@ -1,0 +1,50 @@
+body {
+	width: 100%;
+}
+.animation {
+	margin: 30px 0 22px;
+	height: 108px;
+}
+/**/
+
+.News {
+	width: 400%;
+	animation: news 20s linear infinite;
+}
+.News a {
+	width: 8.3333%;
+	text-align: center;
+}
+.News a img {
+	width: 60%;
+	
+}
+.textList li {
+	height: 188px;
+}
+.textList strong {
+	font-size: 22px;
+	line-height: 26px;
+}
+.textList span {
+	font-size: 16px;
+	line-height: 24px;
+}
+.footer {
+	padding-bottom: 5px;
+	line-height: 32px;
+}
+.Copy {
+	float: none;
+	width: 100%;
+	text-align: center;
+}
+.Link {
+	float: none;
+	width: 100%;
+	text-align: center;
+}
+.Link a {
+	float: none;
+	display: inline-block;
+}

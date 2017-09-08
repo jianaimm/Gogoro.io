@@ -1,0 +1,128 @@
+
+.picList li {
+	float: none;
+	width: 100%;
+}
+/**/
+.animation {
+	margin: 30px 0 22px;
+	height: 188px;
+}
+.textList li {
+	height: 188px;
+}
+/**/
+@keyframes news {
+	0% {
+		transform: translateX(0);
+	}
+	18% {
+		transform: translateX(0);
+	}
+	20% {
+		transform: translateX(-8.3333%);
+	}
+	38% {
+		transform: translateX(-8.3333%);
+	}
+	40% {
+		transform: translateX(-16.6666%);
+	}
+	58% {
+		transform: translateX(-16.6666%);
+	}
+	60% {
+		transform: translateX(-24.9999%);
+	}
+	78% {
+		transform: translateX(-24.9999%);
+	}
+	80% {
+		transform: translateX(-33.3332%);
+	}
+	98% {
+		transform: translateX(-33.3332%);
+	}
+	100% {
+		transform: translateX(-41.6665%);
+	}
+}
+.NewsAnimation {
+	width: 100%;
+	height: 81px;
+	overflow: hidden;
+	background: rgba(241,243,243,1);
+}
+.News {
+	width: 240%;
+	animation: news 20s linear infinite;
+}
+.News a {
+	float: left;
+	position: relative;
+	top: 32px;
+	width: 8.3333%;
+}
+.News .none {
+	display: block;
+}
+/**/
+/**/
+.community {
+	overflow: hidden;
+}
+.community .Our {
+	float: none;
+	width: 100%; 
+}
+.Our .hide {
+	display: inline;
+}
+@keyframes silder {
+	0% {
+		transform: translateX(0);
+	}
+	48% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(-33.3333%);
+	}
+	98% {
+		transform: translateX(-33.3333%);
+	}
+	100% {
+		transform: translateX(-66.6666%);
+	}
+}
+.community .number {
+	float: none;
+	width: 300%;
+	padding-bottom: 32px;
+	animation: silder 8s linear infinite;
+}
+.number li {
+	text-align: center;
+}
+/*footer.css*/
+.footer {
+	padding: 0 2.6181%;
+}
+.dropForm {
+	float: none;
+	text-align: center;
+}
+.caret {
+	float: none;
+	display: inline-block;
+	transform: translate(70px,-5px);
+}
+.dropmenu {
+	float: none;
+}
+.Copy {
+	margin: 0;
+}
+.Link {
+	float: right;
+}
